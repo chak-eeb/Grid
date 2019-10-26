@@ -1,0 +1,42 @@
+body {
+	color: white;
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+	width: 1200px;
+	background-color: lightgray;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 60px 150px 600px 60px;
+	grid-gap: 15px;
+	padding: 15px;
+}
+
+.header {
+	background-color: orangered;
+	grid-area: 1 / 1 / 2 / 5;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+	background-color: lightseagreen;
+}
+
+.sidebar {
+	background-color: lime;
+	grid-area: 2 / 4 / -1 / 5;
+}
+
+.content {
+	background-color: mediumorchid;
+	grid-column: 1 / 4;
+}
+
+.footer {
+	background-color: orangered;
+	grid-area: 4/ 1 / -1 / -1;
+}
